@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vendas Eletro</title>
+    <meta property="og:title" content="Vendas Eletro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <navbar1-wrapper class="navbar1-wrapper">
+          <!--Navbar1 component-->
+          <header class="navbar1-container">
+            <header data-thq="thq-navbar" class="navbar1-navbar-interactive">
+              <img alt="Logo" src="e" class="navbar1-image1" />
+              <div data-thq="thq-navbar-nav" class="navbar1-desktop-menu">
+                <nav class="navbar1-links1">
+                  <a href="index.html" class="navbar1-link11 thq-body-small thq-link">
+                    <fragment class="home-fragment10">
+                      <span class="home-text10">Home</span>
+                    </fragment>
+                  </a>
+                  <a href="about.html" class="navbar1-link21 thq-body-small thq-link">
+                    <fragment class="home-fragment11">
+                      <span class="home-text11">Sobre nos</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="index.html"
+                    
+                    rel="noreferrer noopener"
+                    class="navbar1-link31 thq-body-small thq-link"
+                  >
+                    <fragment class="home-fragment12">
+                      <span class="home-text12">Produtos</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="contact.html"
+                    
+                    rel="noreferrer noopener"
+                    class="navbar1-link41 thq-body-small thq-link"
+                  >
+                    <fragment class="home-fragment13">
+                      <span class="home-text13">Contato</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="index.html"
+                    
+                    rel="noreferrer noopener"
+                    class="navbar1-link51 thq-body-small thq-link"
+                  >
+                    <fragment class="home-fragment14">
+                      <span class="home-text14">FAQ</span>
+                    </fragment>
+                  </a>
+                </nav>
+                <div class="navbar1-buttons1">
+                  <button
+                    class="navbar1-action11 thq-button-filled thq-button-animated"
+                  >
+                    <span>
+                      <fragment class="home-fragment15">
+                        <span class="home-text15">Perfil</span>
+                      </fragment>
+                    </span>
+                  </button>
+                  <button
+                    class="navbar1-action21 thq-button-outline thq-button-animated"
+                  >
+                    <span>
+                      <fragment class="home-fragment16">
+                        <span class="home-text16">Carrinho</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar1-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar1-icon10">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar1-mobile-menu">
+                <div class="navbar1-nav">
+                  <div class="navbar1-top">
+                    <img alt="Logo" src="e" class="navbar1-logo" />
+                    <div data-thq="thq-close-menu" class="navbar1-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar1-icon12">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar1-links2">
+                    <a href="index.html" class="navbar1-link12 thq-body-small thq-link">
+                      <fragment class="home-fragment10">
+                        <span class="home-text10">Home</span>
+                      </fragment>
+                    </a>
+                    <a href="index.html" class="navbar1-link22 thq-body-small thq-link">
+                      <fragment class="home-fragment11">
+                        <span class="home-text11">Sobre nos</span>
+                      </fragment>
+                    </a>
+                    <a href="index.html" class="navbar1-link32 thq-body-small thq-link">
+                      <fragment class="home-fragment12">
+                        <span class="home-text12">Produtos</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="/contact"
+                      class="navbar1-link42 thq-body-small thq-link"
+                    >
+                      <fragment class="home-fragment13">
+                        <span class="home-text13">Contato</span>
+                      </fragment>
+                    </a>
+                    <a href="index.html" class="navbar1-link52 thq-body-small thq-link">
+                      <fragment class="home-fragment14">
+                        <span class="home-text14">FAQ</span>
+                      </fragment>
+                    </a>
+                  </nav>
+                  <div class="navbar1-buttons2">
+                    <button class="thq-button-filled">
+                      <span>
+                        <fragment class="home-fragment15">
+                          <span class="home-text15">Perfil</span>
+                        </fragment>
+                      </span>
+                    </button>
+                    <button class="thq-button-outline">
+                      <span>
+                        <fragment class="home-fragment16">
+                          <span class="home-text16">Carrinho</span>
+                        </fragment>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="navbar1-icon-group">
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </header>
+          </header>
+        </navbar1-wrapper>
+        <features3-wrapper
+          class="features3-wrapper"
+          rootclassname="features3undefined"
+        >
+          <!--Features3 component-->
+          <div
+            class="features3-layout253 thq-section-padding features3root-class-name"
+          >
+            <div class="features3-max-width thq-section-max-width thq-flex-row">
+              <div class="features3-container1">
+                <div class="features3-container2">
+                  <div class="features3-section-title thq-flex-column">
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment18">
+                        <span class="home-text21">Slogan</span>
+                      </fragment>
+                    </span>
+                    <div class="features3-content1 thq-flex-column">
+                      <h2 class="thq-heading-2">
+                        <fragment class="home-fragment20">
+                          <span class="home-text23">
+                            Produtos de altissima qualidade
+                          </span>
+                        </fragment>
+                      </h2>
+                      <p class="thq-body-large">
+                        <fragment class="home-fragment26">
+                          <span class="home-text29">
+                            Veja nossa gama de produtos com 3 meses de garantia!
+                          </span>
+                        </fragment>
+                      </p>
+                    </div>
+                    <div class="thq-flex-row features3-actions">
+                      <button class="thq-button-filled features3-button1">
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment19">
+                            <span class="home-text22">Ver produtos</span>
+                          </fragment>
+                        </span>
+                      </button>
+                      <button class="thq-button-outline features3-button2">
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment25">
+                            <span class="home-text28">Prazos</span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="features3-text13">
+                    <fragment class="home-fragment17">
+                      <span class="home-text17">
+                        <span>Veja as avaliações abaixo:</span>
+                        <br />
+                        <br />
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div
+                  data-thq="slider"
+                  data-navigation="true"
+                  data-pagination="true"
+                  class="features3-slider swiper"
+                >
+                  <div data-thq="slider-wrapper" class="swiper-wrapper">
+                    <div
+                      data-thq="slider-slide"
+                      class="features3-slider-slide1 swiper-slide"
+                    ></div>
+                    <div
+                      data-thq="slider-slide"
+                      class="features3-slider-slide2 swiper-slide"
+                    ></div>
+                    <div
+                      data-thq="slider-slide"
+                      class="features3-slider-slide3 swiper-slide"
+                    ></div>
+                  </div>
+                  <div
+                    data-thq="slider-pagination"
+                    class="features3-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                  >
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination-bullet"
+                      class="swiper-pagination-bullet"
+                    ></div>
+                  </div>
+                  <div
+                    data-thq="slider-button-prev"
+                    class="swiper-button-prev"
+                  ></div>
+                  <div
+                    data-thq="slider-button-next"
+                    class="swiper-button-next"
+                  ></div>
+                </div>
+              </div>
+              <div class="features3-content2 thq-flex-column">
+                <div class="thq-flex-row features3-list1">
+                  <div class="features3-list-item1 thq-flex-column">
+                    <img
+                      alt="User-Friendly Interface Image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_lA2oJZMk4ZDZDT0qZ9OUjV_UyhpfJK-7g&amp;s"
+                      class="thq-img-ratio-1-1 thq-img-round"
+                    />
+                    <div class="features3-content3 thq-flex-column">
+                      <h3 class="features3-title11 thq-heading-3">
+                        <fragment class="home-fragment21">
+                          <span class="home-text24">Placas de video</span>
+                        </fragment>
+                      </h3>
+                      <span class="features3-description11 thq-body-small">
+                        <fragment class="home-fragment27">
+                          <span class="home-text30">
+                            Placas de video de ultima geração
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="thq-flex-column">
+                    <img
+                      alt="Advanced Security Image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5PX57tfbZHDntB4Xxr4ZYUpUhlV4gYHyRw&amp;s"
+                      class="thq-img-ratio-1-1 thq-img-round"
+                    />
+                    <div class="features3-content4 thq-flex-column">
+                      <h3 class="features3-title12 thq-heading-3">
+                        <fragment class="home-fragment22">
+                          <span class="home-text25">Processadores</span>
+                        </fragment>
+                      </h3>
+                      <span class="features3-description12 thq-body-small">
+                        <fragment class="home-fragment28">
+                          <span class="home-text31">
+                            Processadores Intel 13a
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="features3-list2 thq-flex-row">
+                  <div class="thq-flex-column">
+                    <img
+                      alt="Customization Options Image"
+                      src="https://m.media-amazon.com/images/I/41W2Vvt5MoL._AC_.jpg"
+                      class="thq-img-ratio-1-1 thq-img-round"
+                    />
+                    <div class="features3-content5 thq-flex-column">
+                      <h3 class="features3-title13 thq-heading-3">
+                        <fragment class="home-fragment23">
+                          <span class="home-text26">Memoria Ram</span>
+                        </fragment>
+                      </h3>
+                      <span class="features3-description13 thq-body-small">
+                        <fragment class="home-fragment29">
+                          <span class="home-text32">
+                            Memorias rápidas e de qualidade
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="thq-flex-column">
+                    <img
+                      alt="24/7 Support Image"
+                      src="https://images.tcdn.com.br/img/img_prod/740836/gabinete_gamer_concordia_creative_com_3_fans_argb_e_vidro_frontal_para_escrita_16113_1_8ca84b4b7575a4a8bde6642d9dcdf831.jpg"
+                      class="thq-img-ratio-1-1 thq-img-round"
+                    />
+                    <div class="features3-content6 thq-flex-column">
+                      <h3 class="features3-title14 thq-heading-3">
+                        <fragment class="home-fragment24">
+                          <span class="home-text27">Gabinetes</span>
+                        </fragment>
+                      </h3>
+                      <span class="features3-description14 thq-body-small">
+                        <fragment class="home-fragment30">
+                          <span class="home-text33">
+                            Gabinetes com boa estrutura
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </features3-wrapper>
+        <ul class="list">
+          <li class="list-item"></li>
+          <li class="list-item"></li>
+          <li class="list-item"></li>
+        </ul>
+        <faq8-wrapper class="faq8-wrapper" rootclassname="faq8undefined">
+          <!--FAQ8 component-->
+          <div class="faq8faq8 thq-section-padding faq8root-class-name">
+            <div class="faq8-max-width thq-section-max-width">
+              <div class="faq8-container10 thq-flex-column">
+                <div class="thq-flex-column">
+                  <h2 class="faq8-text10 thq-heading-2">
+                    <fragment class="home-fragment33">
+                      <span class="home-text38">FAQs</span>
+                    </fragment>
+                  </h2>
+                </div>
+                <div class="thq-flex-column">
+                  <p class="faq8-text11 thq-body-large">
+                    <fragment class="home-fragment32">
+                      <span class="home-text35">
+                        <span>Perguntas</span>
+                        <br />
+                      </span>
+                    </fragment>
+                  </p>
+                  <div class="faq8-list thq-flex-column">
+                    <div class="faq8-faq1">
+                      <div class="faq8-trigger1 thq-section-max-width">
+                        <p class="faq8-faq1-question thq-body-large">
+                          <fragment class="home-fragment35">
+                            <span class="home-text40">Pergunta 1</span>
+                          </fragment>
+                        </p>
+                        <div class="faq8-icons-container1">
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon10">
+                              <path
+                                d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon12">
+                              <path
+                                d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq8-container14">
+                        <span class="thq-body-small">
+                          Lorem ipsum dolor sit amet. Est eaque sint ut
+                          blanditiis sunt aut deleniti illum non repudiandae
+                          voluptatem. Aut praesentium doloribus qui distinctio
+                          neque ut unde temporibus. Cum exercitationem eveniet
+                          in omnis animi in corporis nulla. Sed tempora
+                          excepturi et voluptatem modi et exercitationem
+                          voluptate cum illum quisquam 33 quia blanditiis eos
+                          minus consequatur.Ut neque quam qui dignissimos
+                          voluptates ut voluptate totam aut consequuntur quod.
+                          Ut voluptas incidunt ut fuga nostrum ut quaerat enim
+                          eum earum tenetur? Est esse harum et Quis officiis et
+                          enim amet.Et minima tempore et neque voluptatem eos
+                          amet officiis et temporibus Quis. Et suscipit esse id
+                          nemo sunt At nihil earum et consequatur fuga aut
+                          sapiente voluptate est cupiditate esse non dolor
+                          cumque. Ut obcaecati recusandae et beatae quae qui
+                          doloremque eligendi sit eaque labore.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="faq8-faq2">
+                      <div class="faq8-trigger2 thq-section-max-width">
+                        <p class="faq8-faq2-question1 thq-body-large">
+                          <fragment class="home-fragment36">
+                            <span class="home-text41">Pergunta 2</span>
+                          </fragment>
+                        </p>
+                        <div class="faq8-icons-container2">
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon14">
+                              <path
+                                d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon16">
+                              <path
+                                d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq8-container17">
+                        <span class="thq-body-small">
+                          Et minima tempore et neque voluptatem eos amet
+                          officiis et temporibus Quis. Et suscipit esse id nemo
+                          sunt At nihil earum et consequatur fuga aut sapiente
+                          voluptate est cupiditate esse non dolor cumque. Ut
+                          obcaecati recusandae et beatae quae qui doloremque
+                          eligendi sit eaque labore.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="faq8-faq3">
+                      <div class="faq8-trigger3 thq-section-max-width">
+                        <p class="faq8-faq2-question2 thq-body-large">
+                          <fragment class="home-fragment34">
+                            <span class="home-text39">Pergunta 3</span>
+                          </fragment>
+                        </p>
+                        <div class="faq8-icons-container3">
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon18">
+                              <path
+                                d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <svg viewBox="0 0 1024 1024" class="faq8-icon20">
+                              <path
+                                d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq8-container20">
+                        <span class="thq-body-small">
+                          A quia temporibus aut ullam assumenda vel eius
+                          sapiente ut eligendi molestias. Ex ipsum incidunt ut
+                          excepturi eaque sed nulla quia qui exercitationem
+                          alias aut consequuntur nihil et animi voluptas.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="faq8-button thq-button-outline">
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment31">
+                        <span class="home-text34">
+                          Entre em contato se sua pergunta não estiver aqui!
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </faq8-wrapper>
+        <footer41-wrapper class="footer41-wrapper">
+          <!--Footer41 component-->
+          <footer class="footer41-footer7 thq-section-padding">
+            <div class="footer41-max-width thq-section-max-width">
+              <div class="footer41-content">
+                <div class="footer41-logo"></div>
+                <div class="footer41-links">
+                  <a
+                    href="https://example.com"
+                    
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment37">
+                      <span class="home-text42">
+                        <span>FAQ</span>
+                        <br />
+                      </span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment38">
+                      <span class="home-text45">
+                        <span>Contato</span>
+                        <br />
+                      </span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment39">
+                      <span class="home-text48">Sobre nos</span>
+                    </fragment>
+                  </a>
+                </div>
+              </div>
+              <div class="footer41-credits">
+                <div class="thq-divider-horizontal"></div>
+                <div class="footer41-row">
+                  <div class="footer41-container">
+                    <span class="thq-body-small"><span>@2024</span></span>
+                  </div>
+                  <div class="footer41-footer-links">
+                    <span class="footer41-text2 thq-body-small">
+                      <fragment class="home-fragment41">
+                        <span class="home-text50">Politica de privacidade</span>
+                      </fragment>
+                    </span>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment40">
+                        <span class="home-text49">Termos do serviço</span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </footer41-wrapper>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
